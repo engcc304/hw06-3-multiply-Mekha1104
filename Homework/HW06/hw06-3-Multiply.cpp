@@ -75,3 +75,24 @@
         6 x 9 = 54
 
 */
+#include <iostream>
+using namespace std;
+
+int main() {
+    int start, end;
+    
+    cout << "Start :" << endl;
+    cin >> start;
+
+    cout << "End :" << endl;
+    cin >> end;
+
+    for (int i = start; i <= end; ++i) {
+        for (int j = 1; j <= 9; ++j) {
+            cout << i << " x " << j << " = " << (i * j) << endl;
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
